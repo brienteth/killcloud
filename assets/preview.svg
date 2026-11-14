@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" width="920" height="380">
+  <defs><style>
+    .bg{fill:#0B0C10}.bad{fill:#1B1316;stroke:#5E2A33;stroke-width:1.5}.good{fill:#111916;stroke:#5AE39B;stroke-width:1.8}
+    .h{fill:#EAE6DF;font-family:system-ui,-apple-system,sans-serif;font-size:18px;font-weight:700}
+    .m{fill:#8D96AA;font-family:system-ui,-apple-system,sans-serif;font-size:13px}
+    .red{fill:#FF6B7A;font-family:ui-monospace,monospace;font-size:14px;font-weight:700}
+    .grn{fill:#5AE39B;font-family:ui-monospace,monospace;font-size:14px;font-weight:700}
+    .gld{fill:#C8A86B;font-family:ui-monospace,monospace;font-size:13px;font-weight:700}
+  </style></defs>
+  <rect width="920" height="380" rx="16" class="bg"/>
+  <rect x="24" y="24" width="420" height="332" rx="14" class="bad"/>
+  <text x="48" y="60" class="h">Cloud AI Subscriptions</text>
+  <text x="48" y="84" class="m">Renting your own productivity every month</text>
+  <rect x="48" y="108" width="372" height="58" rx="10" fill="#120E10" stroke="#3D2026"/>
+  <text x="64" y="134" class="red">$20/mo ($240/year) per tool</text>
+  <text x="64" y="154" class="m">Breaks the second Wi-Fi drops or billing fails</text>
+  <rect x="48" y="180" width="372" height="58" rx="10" fill="#120E10" stroke="#3D2026"/>
+  <text x="64" y="206" class="red">Every note, log &amp; snippet uploaded</text>
+  <text x="64" y="226" class="m">Stored &amp; logged on third-party GPU clusters</text>
+  <rect x="48" y="252" width="372" height="76" rx="10" fill="#120E10" stroke="#3D2026"/>
+  <text x="64" y="284" class="m">Rate limits · Account walls · Forced updates</text>
+  <text x="64" y="308" class="red">Zero ownership of your local workflow</text>
+
+  <rect x="476" y="24" width="420" height="332" rx="14" class="good"/>
+  <text x="500" y="60" class="h">After: KillCloud ($0/mo Forever)</text>
+  <text x="500" y="84" class="m">3-in-1 offline AI workspace on your own CPU</text>
+  <rect x="500" y="108" width="116" height="44" rx="8" fill="#161A24" stroke="#C8A86B"/>
+  <text x="514" y="135" class="gld">Private Chat</text>
+  <rect x="628" y="108" width="116" height="44" rx="8" fill="#161A24" stroke="#282E3E"/>
+  <text x="642" y="135" class="m">Summarizer</text>
+  <rect x="756" y="108" width="116" height="44" rx="8" fill="#161A24" stroke="#282E3E"/>
+  <text x="770" y="135" class="m">Code Helper</text>
+  <rect x="500" y="168" width="372" height="160" rx="10" fill="#0E1412" stroke="#25543E"/>
+  <text x="516" y="200" class="grn">Cloud Bytes Sent: 0 B</text>
+  <text x="516" y="228" class="grn">Monthly Cost    : $0.00</text>
+  <text x="516" y="256" class="gld">Engine          : MYCA-Modchip (0 GPU, 77+ tok/s)</text>
+  <text x="516" y="288" class="m">Works on airplanes, air-gapped laptops &amp; old Macs</text>
+</svg>

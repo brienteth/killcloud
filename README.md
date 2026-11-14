@@ -1,30 +1,61 @@
+<div align="center">
+
 # KillCloud
 
-**Replace $20/mo cloud AI subscriptions with a 1-click, 100% offline local AI workspace (`0 GPU`, `0 bytes` sent to cloud).**
+### Stop paying $20/month to send your private notes to someone else's GPU.
 
-Powered by [MYCA-Modchip](https://github.com/brienteth/myca-ghr-modchip) (`78+ tok/s` pure CPU C99 + SIMD, `69 MB` model).
+A sleek, **100% offline 3-in-1 AI workspace** (Private Chat, Note/Log Summarizer, Offline Code Helper) that runs on any laptop CPU with **0 bytes sent to the cloud** — powered by [MYCA-Modchip](https://github.com/brienteth/myca-ghr-modchip).
 
-## Quick Start
+[![License: MIT](https://img.shields.io/badge/License-MIT-C8A86B.svg)](LICENSE)
+[![Cost](https://img.shields.io/badge/Monthly_Cost-%240.00-5AE39B.svg)](#quick-start)
+[![Cloud Bytes](https://img.shields.io/badge/Cloud_Bytes_Sent-0_B-blue.svg)](#quick-start)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](#contributing)
+
+<br/>
+
+<img src="assets/preview.svg" alt="KillCloud Before and After" width="100%" />
+
+</div>
+
+---
+
+## Why KillCloud?
+
+| | Cloud AI Tools | **KillCloud** |
+| :--- | :---: | :---: |
+| **Cost** | $20 / month ($240 / year) | **$0.00 forever (MIT)** |
+| **Privacy** | Uploaded to external servers | **0 bytes leave your machine** |
+| **Hardware** | Cloud GPU clusters | **Any CPU (0 GPU, 69 MB model)** |
+| **Offline / Airplane** | Broken | **Works 100% offline at 77+ tok/s** |
+
+---
+
+## Quick Start (10 Seconds)
 
 ```bash
+# 1. Install the 0-GPU runtime + 69 MB model (once)
+curl -fsSL https://raw.githubusercontent.com/brienteth/myca-ghr-modchip/main/install.sh | sh
+myca-modchip pull smollm2-135m
+
+# 2. Launch KillCloud
 git clone https://github.com/brienteth/killcloud.git
 cd killcloud
 python3 killcloud.py
-# Open http://127.0.0.1:8989/
 ```
 
-### Install the 0-GPU Offline Engine (One Time)
+Open **`http://127.0.0.1:8989/`**.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/brienteth/myca-ghr-modchip/main/install.sh | sh
-myca-modchip pull smollm2-135m
-```
+---
 
-## Included Offline Tools
-- **Private Chat:** Zero-telemetry local assistant.
-- **Note & Log Summarizer:** Summarize sensitive docs/emails without leaving your machine.
-- **Offline Code Helper:** Local C/Python/systems helper with `$0/mo` cost.
+## Included Offline Modes
+- **Private Chat:** Ask questions offline with zero accounts or telemetry.
+- **Note / Doc Summarizer:** Paste sensitive meeting notes, emails, or server logs and summarize locally.
+- **Offline Code Helper:** Explain C/Python/systems snippets on air-gapped machines.
 
-## License
-MIT
+---
 
+## Contributing (PRs Welcome!)
+
+Want to add new local workflows (PDF/Markdown reader, SQL helper, regex explainer, git commit writer)?
+- Add a mode in `killcloud.py` (keep zero external `pip` dependencies)
+- Open a PR!
